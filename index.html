@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
+
+
 </head>
 
 <body>
@@ -16,7 +19,11 @@
             <div class="mx-8">
                 <img src="images/moneystacks.jpg" alt="">
             </div>
+
             <div class="mx-8">
+                <div>
+                    <h2 class="block text-2xl">Income</h2>
+                </div>
                 <div>
                     <h2 class="inline text-1xl">Income:</h2>
                     <input id="income-money" class="border-2 border-gray-400 rounded mt-4 px-2" type="text"
@@ -55,13 +62,33 @@
                     <h3 class="text-2xl inline" id="balance"></span></h3>
                 </div>
 
+                <div>
+                    <h2 class="inline text-1xl">Save:</h2>
+                    <input id="Save-money" class="border-2 border-gray-400 rounded mt-4 px-2" type="text"
+                        placeholder="Save">
+                </div>
+                <div class="mt-4">
+                    <button id="save-btn" class="bg-green-400 py-2 px-4">Save</button>
+                </div>
 
+                <div>
+                    <h2 class="inline text-2xl">Saving Amount</h2>
+                    <h3 class="text-2xl inline" id="saving-Amount"></span></h3>
+                </div>
+
+                <div>
+                    <h2 class="inline text-2xl">Remaining Balance</h2>
+                    <h3 class="text-2xl inline" id="remaining-Balance"></span></h3>
+                </div>
+
+            </div>
+            <div class="notify-section">
+                <p id="notify-income" class="notify">Please </p>
+                <p id="notify-rent" class="notify"></p>
             </div>
 
         </div>
-        <div class="notify-section">
-            <p id="notify-number" class="notify">please give a number</p>
-        </div>
+
     </section>
     <script src="js/money.js"></script>
 </body>
