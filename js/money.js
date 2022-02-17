@@ -12,10 +12,6 @@ function getInputValue(inputValue) {
 
 
 
-
-
-
-
 document.getElementById('calculate').addEventListener('click', function () {
     // const inputField = document.getElementById('income-money');
     // const incomeAmount = inputField.value;
@@ -69,3 +65,19 @@ document.getElementById('calculate').addEventListener('click', function () {
 
 
 
+function errorMassege() {
+    const incomeError = document.getElementById('income-money').value;
+    const typedNumber = document.getElementById('typed-numbers').value;
+    const successMessage = document.getElementById('notify-number');
+    const failError = document.getElementById('notify-fail');
+    if (incomeError < 0) {
+
+        successMessage.style.display = 'block';
+        failError.style.display = 'none';
+    }
+    else {
+
+        failError.style.display = 'block';
+        successMessage.style.display = 'none';
+    }
+}
