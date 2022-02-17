@@ -7,22 +7,9 @@ function getInputValue(inputValue) {
     if (foodAmountNumber == -1) {
         document.getElementById('total-expenses').innerText = 'please give number';
     }
-
-
     return foodAmountNumber;
 }
 
-function setValueInnrText() {
-    const incomeAmountNumber = getInputValue('income-money');
-    const foodAmountNumber = getInputValue('food-money');
-    const rentAmountNumber = getInputValue('rent-money');
-    const clothesAmountNumber = getInputValue('clothes-money');
-
-    const total = incomeAmountNumber + foodAmountNumber + rentAmountNumber + clothesAmountNumber;
-    console.log(total);
-    return total;
-
-}
 
 
 
