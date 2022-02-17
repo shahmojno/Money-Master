@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-5xl flex justify-center my-4 mx-4 text-green-500">Saving Money </h1>
+    <section class=" container">
+        <div class="grid grid-cols-2 gap-4">
+            <div>
+                <img src="images/moneystacks.jpg" alt="">
+            </div>
+            <div>
+
+                <div>
+                    <h2 class="inline">Income:</h2>
+                    <input id="income-money" class="border-2 border-gray-400 rounded mt-4 px-2" type="text"
+                        placeholder="Income">
+                </div>
+
+                <h2 class="block text-3xl">Expenses</h2>
+
+                <div>
+                    <h2 class="inline">Food:</h2>
+                    <input id="food-money" class="border-2 border-gray-400 rounded mt-4 px-2" type="text"
+                        placeholder="Food">
+                </div>
+                <div>
+                    <h2 class="inline">Rent:</h2>
+                    <input id="rent-money" class="border-2 border-gray-400 rounded mt-4 px-2" type="text"
+                        placeholder="Rent">
+                </div>
+
+                <div>
+                    <h2 class="inline">Clothes:</h2>
+                    <input id="clothes-money" class="border-2 border-gray-400 rounded mt-4 px-2" type="text"
+                        placeholder="Clothes">
+                </div>
+                <div class="mt-4">
+                    <button id="calculate" class="bg-green-400 py-2 px-4">Calculate</button>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl inline">Total Expenses:</h2>
+                    <h3 class="text-2xl inline" id="total-expenses"></span></h3>
+                </div>
+
+                <div>
+                    <h2 class="inline text-2xl">Balance:</h2>
+                    <h3 class="text-2xl inline" id="balance"></span></h3>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <script src="js/money.js"></script>
+</body>
+
+</html>
