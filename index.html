@@ -8,6 +8,9 @@
     <title>Document</title>
     <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/408802a6ed.js" crossorigin="anonymous"></script>
+
     <!-- Tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -15,14 +18,16 @@
 </head>
 
 <body>
-    <h1 class="text-5xl flex justify-center my-4 mx-4 text-green-500">Saving Money </h1>
+    <h1 class="text-5xl flex justify-center my-8 mx-4 text-green-500">Saving Money
+        <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+    </h1>
     <section class=" container my-4">
         <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-7">
-            <div class="mx-8">
+            <div class="mx-8 my-8">
                 <img src="images/moneystacks.jpg" alt="">
             </div>
 
-            <div class="mx-8">
+            <div class="mx-8 my-8">
                 <div>
                     <h2 class="block text-2xl">Income</h2>
                 </div>
@@ -32,7 +37,7 @@
                 </div>
 
                 <div>
-                    <h2 class="inline text-1xl">Income:</h2>
+                    <h2 class="inline text-1xl">Income :</h2>
                     <input id="income-money" class="border-2 border-gray-400 rounded mt-4 px-2" type="text"
                         placeholder="Income">
                 </div>
@@ -40,12 +45,12 @@
                 <h2 class="block text-2xl">Expenses</h2>
 
                 <div>
-                    <h2 class="inline text-1xl">Food:</h2>
+                    <h2 class="inline text-1xl">Food :</h2>
                     <input id="food-money" class="border-2 border-gray-400 rounded mt-4 px-2 ml-2" type="text"
                         placeholder="Food">
                 </div>
                 <div>
-                    <h2 class="inline text-1xl">Rent:</h2>
+                    <h2 class="inline text-1xl">Rent :</h2>
                     <input id="rent-money" class="border-2 border-gray-400 rounded mt-4 px-2 ml-3" type="text"
                         placeholder="Rent">
                 </div>
@@ -60,12 +65,12 @@
                 </div>
 
                 <div>
-                    <h2 class="text-2xl inline">Total Expenses:</h2>
+                    <h2 class="text-2xl inline">Total Expenses :</h2>
                     <h3 class="text-2xl inline" id="total-expenses"></span></h3>
                 </div>
 
                 <div>
-                    <h2 class="inline text-2xl">Balance:</h2>
+                    <h2 class="inline text-2xl">Balance :</h2>
                     <h3 class="text-2xl inline" id="balance"></span></h3>
                 </div>
 
@@ -73,18 +78,18 @@
                     <h2 class="inline text-1xl">Save:</h2>
                     <input id="Save-money" class="border-2 border-gray-400 rounded mt-4 px-2" type="text"
                         placeholder="Save">
-                </div>
-                <div class="mt-4">
-                    <button id="save-btn" class="bg-green-400 py-2 px-4">Save</button>
+                    <h2 class="inline text-1xl mx-4">%</h2>
+                    <button id="save-btn" class="bg-green-400 mx-4 py-1 px-4">Save</button>
                 </div>
 
+
                 <div>
-                    <h2 class="inline text-2xl">Saving Amount</h2>
+                    <h2 class="inline text-2xl">Saving Amount :</h2>
                     <h3 class="text-2xl inline" id="saving-Amount"></span></h3>
                 </div>
 
                 <div>
-                    <h2 class="inline text-2xl">Remaining Balance</h2>
+                    <h2 class="inline text-2xl">Remaining Balance :</h2>
                     <h3 class="text-2xl inline" id="remaining-Balance"></span></h3>
                 </div>
 
