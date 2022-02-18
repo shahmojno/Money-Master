@@ -13,10 +13,18 @@ document.getElementById('calculate').addEventListener('click', function () {
 
     const incomeAmountNumber = getInputValue('income-money');
 
+    const notNumber = document.getElementById('notify-rent');
     const successMessage = document.getElementById('notify-income');
+
     if (incomeAmountNumber == -1) {
-        successMessage.style.display = 'block';
+        notNumber.style.display = 'block';
     }
+    else if (typeof incomeAmountNumber != Number) {
+        successMessage.style.display = 'block';
+
+    }
+
+
     else {
         successMessage.style.display = 'none';
     }
@@ -64,7 +72,7 @@ document.getElementById('save-btn').addEventListener('click', function () {
 
     const totalExpenses = foodAmountNumber + rentAmountNumber + clothesAmountNumber;
     const totalBalance = incomeAmountNumber - totalExpenses;
-    const saveAmountPercent = (saveAmountNumer / 100) * saveAmountNumer;
+    const saveAmountPercent = saveAmountNumer / 100 * totalBalance;
     const remainingBalance = totalBalance - saveAmountPercent;
 
     document.getElementById('saving-Amount').innerText = saveAmountPercent;

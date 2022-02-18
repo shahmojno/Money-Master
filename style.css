@@ -1,0 +1,15 @@
+.notify {
+    color: rgb(219, 44, 44);
+    text-align: center;
+    margin: 0 auto;
+    background: #222436;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 5px 20px;
+    display: none;
+}
+.notify-section{
+    width: 50%;
+    margin: 0 auto;
+}
+
